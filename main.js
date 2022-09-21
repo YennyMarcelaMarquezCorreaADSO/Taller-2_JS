@@ -1,26 +1,33 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Ejercicio 10. 
-//Calcular el valor total del valor de 5 productos, el IVA y el subtotal, visualizar los resultados de: Iva, Subtotal y Total de la compra de los artículos.
+    // Ejercicio 11. 
+//Programa para solicitar el nombre, apellido, edad y la nota promedio de 5 estudiantes de un curso de computación.
 
+    let estudiante1 = (prompt("Ingrese su nombre completo: "))
+    let edad1 = Number(prompt("Ingrese su edad: "))
+    let nota1 = Number(prompt("Ingrese su nota:"))
 
-    let producto1 = Number(prompt("Ingrese el valor del produto 1: "))
-    let producto2 = Number(prompt("Ingrese el valor del  produto 2: "))
-    let producto3 = Number(prompt("Ingrese el valor del produto 3:"))
-    let producto4 = Number(prompt("Ingrese el valor del produto 4:"))
-    let producto5 = Number(prompt("Ingrese el valor del produto 5:"))
+    let estudiante2 = (prompt("Ingrese su nombre completo: "))
+    let edad2 = Number(prompt("Ingrese su edad: "))
+    let nota2 = Number(prompt("Ingrese su nota:"))
 
-    sumaprecios = producto1 + producto2 + producto3 + producto4 + producto5
+    let estudiante3 = (prompt("Ingrese su nombre completo: "))
+    let edad3 = Number(prompt("Ingrese su edad: "))
+    let nota3 = Number(prompt("Ingrese su nota:"))
 
-    if (sumaprecios > 0 ){
-        subtotal = producto1 + producto2 + producto3 + producto4 + producto5
+    let estudiante4 = (prompt("Ingrese su nombre completo: "))
+    let edad4 = Number(prompt("Ingrese su edad: "))
+    let nota4 = Number(prompt("Ingrese su nota:"))
 
-        console.log(` Sueldo de trabajador de planta según la cantidad de horas introducidas: ${subtotal}`);
+    let estudiante5 = (prompt("Ingrese su nombre completo: "))
+    let edad5 = Number(prompt("Ingrese su edad: "))
+    let nota5 = Number(prompt("Ingrese su nota:"))
+  
+    Promedio = (nota1 + nota2 + nota3 + nota4 + nota5)/5
 
-        IVA = sumaprecios*19/100
-        console.log(` Sueldo de trabajador de planta según la cantidad de horas introducidas: ${IVA}`);
+    if (pro > 0 ){
+        
+        console.log(`El promedio de los cinco estudiantes es: "${promedio}"`);
 
-        Totalcompra = sumaprecios + IVA
-        console.log(` Sueldo de trabajador de planta según la cantidad de horas introducidas: ${Totalcompra}`);
     } else{
         console.log(`Lo ingresado no es valido`);
     }
