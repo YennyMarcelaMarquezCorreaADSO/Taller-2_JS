@@ -1,14 +1,37 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Ejercicio 8. 
-//En cierta empresa se les paga a sus trabajadores de la siguiente forma: si el empleado es de planta, la hora trabajada se le paga a $20000, si el empleado es administrativo, la hora trabajada se le paga a $10000. Para calcular su pago es necesario conocer el total de horas trabajadas.
+    // Ejercicio 9. 
+//Realizar el algoritmo que lea N números, calcule y escriba la suma de los pares y el producto de los impares. Numero par es aquel que su residuo igual a cero (num mod !=0)
 
-    let Trabaja = (prompt("Ingrese en que trabaja planta (P) o administrativo (A): "))
+
+    let pares, impares
+
+    pares = []
+    impares = []
+
+    cantidad = Number(prompt("Ingrese la cantidad de numeros que desea calcular"))
+    for (var y of cantidad){
+        numero = Number(prompt("Ingrese un número")) 
+        if (numero%2 != 0){
+            impares.append(numero)
+        }else if ( numero%2 == 0){
+            pares.append(numero)
+        }
+
+    Sumpares = sum(pares)
+    proimp = np.prod(impares)
+
+    console.log(`El resultado de la operación de los números pares es: "${sumpares}"`);
+
+    console.log(`El resultado de la operación de los números pares es: "${proImp}"`);
+    }
+
+
+       
     
 
-    if (Trabaja == "P" ){
-        horas = Number(prompt("¿Cantidad de horas trabajadas al día?: "))
-        pagahora = 20000
-        sueldo = horas * pagahora
+
+
+
 
         console.log(`%cFormula ${horas} * ${pagahora} `, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
